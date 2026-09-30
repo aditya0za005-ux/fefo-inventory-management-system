@@ -1,0 +1,1 @@
+package com.aditya.fefo.repository; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; import com.aditya.fefo.domain.IdempotencyKey; public interface IdempotencyRepository extends JpaRepository<IdempotencyKey,UUID>{Optional<IdempotencyKey> findByIdempotencyKeyAndEndpoint(String key,String endpoint);}

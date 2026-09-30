@@ -1,0 +1,1 @@
+package com.aditya.fefo.repository; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; import com.aditya.fefo.domain.StockMovement; public interface StockMovementRepository extends JpaRepository<StockMovement,UUID>{}

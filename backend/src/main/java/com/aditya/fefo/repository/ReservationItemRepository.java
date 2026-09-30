@@ -1,0 +1,1 @@
+package com.aditya.fefo.repository; import com.aditya.fefo.domain.ReservationItem; import org.springframework.data.jpa.repository.*; import java.util.*; public interface ReservationItemRepository extends JpaRepository<ReservationItem,UUID>{List<ReservationItem> findByReservationId(UUID id);}

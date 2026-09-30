@@ -1,0 +1,1 @@
+package com.aditya.fefo.repository; import com.aditya.fefo.domain.Product; import org.springframework.data.jpa.repository.*; import java.util.*; public interface ProductRepository extends JpaRepository<Product,UUID>{Optional<Product> findBySku(String sku); long countByActiveTrue();}

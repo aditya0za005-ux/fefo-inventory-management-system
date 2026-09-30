@@ -1,0 +1,1 @@
+package com.aditya.fefo.repository; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; import com.aditya.fefo.domain.AuditLog; public interface AuditLogRepository extends JpaRepository<AuditLog,UUID>{List<AuditLog> findTop200ByOrderByCreatedAtDesc();}
